@@ -1,5 +1,5 @@
 import { evaluate } from "mathjs";
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 const Calu = () => {
     const [input, setInput] = useState<string>("");

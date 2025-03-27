@@ -38,7 +38,7 @@ const customIcon = new L.Icon({
 const MapComponent = ({ lattitude, longitude }: { lattitude: number, longitude: number }) => {
 
   const {data,userData,loading} = useFetchData();
-  
+  console.log(loading)
 
   if(!data || data==undefined || data==null || !userData || userData== undefined || userData==null){
     return (

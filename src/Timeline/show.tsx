@@ -18,13 +18,12 @@ const Show = () => {
   const scrollRef3 = useRef<HTMLDivElement>(null)
   const scrollContainerref4 = useRef<HTMLDivElement>(null)
   const scrollRef4 = useRef<HTMLDivElement>(null)
-  const scrollContainerref5= useRef<HTMLDivElement>(null)
-  const scrollRef5 = useRef<HTMLDivElement>(null)
+  
   const [day1,setDay1] = useState<any>([])
   const [day2,setDay2] = useState<any>([])
   const [day3,setDay3]= useState<any>([])
   const [day4,setDay4] = useState<any>([])
-  const [day5,setDay5] = useState<any>([])
+
   useEffect(() => {
       const fetchData = async () => {
         gsap.to(bgRef.current, {
@@ -46,8 +45,7 @@ const Show = () => {
         let r4= await axios.post('https://backendplaces-9uzl.onrender.com/location/day', { number: 4});
         setDay4(r4.data.places)
 
-        let r5 = await axios.post('https://backendplaces-9uzl.onrender.com/location/day', { number: 5 });
-        setDay5(r5.data.places)
+       
       };
       fetchData();
     }, []);

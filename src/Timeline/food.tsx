@@ -3,6 +3,7 @@ import useFetchData from "@/hooks/useFetchFood";
 
 const Food = () => {
   const {data,loading} = useFetchData();
+  console.log(loading)
     const [visibleBoxes, setVisibleBoxes] = useState<number[]>([]);
 
   useEffect(() => {
