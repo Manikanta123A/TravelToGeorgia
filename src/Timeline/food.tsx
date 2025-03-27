@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import useFetchData from "@/hooks/useFetchFood";
-import { Vegan } from "lucide-react";
 
 const Food = () => {
   const {data,loading} = useFetchData();
@@ -51,7 +50,7 @@ if(data === null ||data == undefined || !data){
             src={food.imageUrl}
             className="w-full rounded-lg"
           />
-          <h2 className="text-center text-amber-800 mt-2 font-bold">{food.name} {food.type === "veg"? <Vegan/>:""}</h2>
+          <h2 className="text-center text-amber-800 mt-2 font-bold">{food.name} </h2>
         </div>
         ))
        }
