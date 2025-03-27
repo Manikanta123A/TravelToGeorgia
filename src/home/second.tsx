@@ -1,8 +1,8 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react"; 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Calculator, ForkKnife, Map, MessageCircleIcon, Plane, TimerIcon } from "lucide-react";
+import { Calculator, ForkKnife, Map, Plane, TimerIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
