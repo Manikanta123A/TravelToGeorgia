@@ -22,16 +22,17 @@ export default function MovingPlane() {
         </motion.h3>
         
         <motion.h3 className="text-green-600" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }}>
-          Hyderabad
+          Hyderabad To Delhi
         </motion.h3>
 
         <motion.h3 className="font-bold" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3 }}>
-          To
+          8:30 PM
         </motion.h3>
 
         <motion.h3 className="text-amber-500" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 4 }}>
-          Delhi
+          Delhi To Tiblisi
         </motion.h3>
+        
       </div>
 
       {/* Animation Styles */}

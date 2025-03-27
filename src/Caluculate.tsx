@@ -71,7 +71,7 @@ const Calu = () => {
                     <div className="buttons">
                         <div className="display">
                             <input type="text" className="dn" value={input} readOnly />
-                            <div className="result md:text-2xl text-2xl text-red-600 font-extrabold max-h-40 overflow-auto">
+                            <div className="result md:text-2xl text-2xl mb-20 text-red-600 font-extrabold max-h-40 overflow-auto">
                                 {result}
                             </div>
 

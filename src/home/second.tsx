@@ -34,7 +34,7 @@ const Second = ()=>{
               ease: "power2.out",
               scrollTrigger: {
                 trigger: containerRef.current,
-                start: "bottom 20%", // Triggers when scrolling is finished
+                start: "bottom 30%", // Triggers when scrolling is finished
                 toggleActions: "play reverse play reverse",
                
               },
