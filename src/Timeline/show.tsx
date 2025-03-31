@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Pic from "./pic";
-import { ArrowBigRight } from "lucide-react";
 import axios from 'axios';
 import MovingPlane from "@/trip";
 
@@ -129,8 +128,11 @@ const Show = () => {
     </div>
 
     <MovingPlane/>
+    { day1!==null? 
+    <div className="flex justify-center items-center">
+      <h1 className="text-red-600">It might take few second to load data</h1>
+    </div> : <>
     <div ref={scrollContainerref} className=" relative w-full overflow-x-scroll min-h-screen  flex justify-center items-center whitespace-nowrap scrollbar-hide bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 ">
-    <h1 className="text-center absolute top-10px">Day-1 <ArrowBigRight/> </h1>
         <div ref={scrollRef} className="min-w-screen w-full rounded-full flex flex-row flex-nowrap gap-4 p-4">
         <style>
         {`
@@ -208,6 +210,8 @@ const Show = () => {
           ))}
         </div>
     </div>
+  </>
+}
     {/* <div ref={scrollContainerref5} className="w-full overflow-x-scroll min-h-screen flex justify-center items-center whitespace-nowrap scrollbar-hide">
         <div ref={scrollRef5} className="min-w-screen flex flex-row flex-nowrap gap-4 p-4">
         {day5.map((place:any, index:number) => (
